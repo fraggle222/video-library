@@ -1,7 +1,8 @@
 This simple project will pull YouTube playlists and display the videos in a "Pulse" styled grid (horizontal
 and vertical scrolling). Current version should be run for iPhone only at this stage. iPad resources to come.
 
-[Note: the large number of GData files will be grouped nicely into one folder once you open your XCode project]
+[Note: the large number of GData files will be grouped nicely into one folder once you open your XCode project.
+These files and the YouTube folder are from Googles objective-c library https://code.google.com/p/gdata-objectivec-client/]
 
 You can edit the Config.plist file to specify the baseURL. This should be of the form:
 https://gdata.youtube.com/feeds/api/users/YouTubeUserName/playlists?v=2
