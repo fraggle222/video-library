@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="2840" systemVersion="11G63b" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="4WI-WU-zGj">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="1926"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="S4b-ey-Fj2">
+            <objects>
+                <tableViewController storyboardIdentifier="ViewController" id="4WI-WU-zGj" customClass="ViewController" sceneMemberID="viewController">
+                    <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" allowsSelection="NO" rowHeight="100" sectionHeaderHeight="22" sectionFooterHeight="22" id="aJL-U3-JU5">
+                        <rect key="frame" x="0.0" y="64" width="320" height="416"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell contentMode="scaleToFill" restorationIdentifier="Cell" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Cell" id="nIc-lh-1sB" customClass="TableCell">
+                                <rect key="frame" x="0.0" y="22" width="320" height="100"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                    <rect key="frame" x="0.0" y="0.0" width="320" height="99"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <collectionView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" minimumZoomScale="0.0" maximumZoomScale="0.0" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="oKz-BJ-s1W">
+                                            <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                            <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="1" minimumInteritemSpacing="1" id="f6H-wE-74p">
+                                                <size key="itemSize" width="133" height="100"/>
+                                                <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                                <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                                <inset key="sectionInset" minX="0.0" minY="0.0" maxX="1" maxY="0.0"/>
+                                            </collectionViewFlowLayout>
+                                            <cells>
+                                                <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="CollectionCell" id="XM2-Tl-oXj" customClass="CollectionViewCell">
+                                                    <rect key="frame" x="0.0" y="0.0" width="133" height="100"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                                        <rect key="frame" x="0.0" y="0.0" width="133" height="100"/>
+                                                        <autoresizingMask key="autoresizingMask"/>
+                                                        <subviews>
+                                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="waV-bd-FAu"/>
+                                                            <view alpha="0.5" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xLP-z3-k6t">
+                                                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                                            </view>
+                                                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="USGA Rules of Golf" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" preferredMaxLayoutWidth="129" translatesAutoresizingMaskIntoConstraints="NO" id="ruv-u1-8tT">
+                                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="height" constant="49" id="Cv4-Mv-78N"/>
+                                                                    <constraint firstAttribute="width" constant="129" id="rKt-6F-pKz"/>
+                                                                </constraints>
+                                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="12"/>
+                                                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                        </subviews>
+                                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                                    </view>
+                                                    <color key="backgroundColor" red="0.73333334922790527" green="0.78039222955703735" blue="0.78431379795074463" alpha="1" colorSpace="deviceRGB"/>
+                                                    <constraints>
+                                                        <constraint firstItem="ruv-u1-8tT" firstAttribute="centerX" secondItem="xLP-z3-k6t" secondAttribute="centerX" type="default" id="G7u-TC-br7"/>
+                                                        <constraint firstItem="waV-bd-FAu" firstAttribute="trailing" secondItem="XM2-Tl-oXj" secondAttribute="trailing" type="default" id="Jjb-yX-m85"/>
+                                                        <constraint firstItem="ruv-u1-8tT" firstAttribute="bottom" secondItem="XM2-Tl-oXj" secondAttribute="bottom" type="default" id="JnS-tX-YEP"/>
+                                                        <constraint firstItem="xLP-z3-k6t" firstAttribute="bottom" secondItem="XM2-Tl-oXj" secondAttribute="bottom" type="default" id="K3v-df-Zf9"/>
+                                                        <constraint firstItem="xLP-z3-k6t" firstAttribute="top" secondItem="ruv-u1-8tT" secondAttribute="top" type="default" id="Ort-1V-Gwp"/>
+                                                        <constraint firstItem="waV-bd-FAu" firstAttribute="bottom" secondItem="XM2-Tl-oXj" secondAttribute="bottom" type="default" id="ahc-Jn-AoL"/>
+                                                        <constraint firstItem="xLP-z3-k6t" firstAttribute="leading" secondItem="XM2-Tl-oXj" secondAttribute="leading" type="default" id="jNp-Lx-jjx"/>
+                                                        <constraint firstItem="ruv-u1-8tT" firstAttribute="centerX" secondItem="waV-bd-FAu" secondAttribute="centerX" type="default" id="jV2-vJ-nN6"/>
+                                                        <constraint firstItem="waV-bd-FAu" firstAttribute="leading" secondItem="XM2-Tl-oXj" secondAttribute="leading" type="default" id="t5r-JC-FpJ"/>
+                                                        <constraint firstItem="waV-bd-FAu" firstAttribute="top" secondItem="XM2-Tl-oXj" secondAttribute="top" type="default" id="ueb-V4-qTh"/>
+                                                    </constraints>
+                                                    <connections>
+                                                        <outlet property="imageView" destination="waV-bd-FAu" id="ah5-2L-MIq"/>
+                                                        <outlet property="label" destination="ruv-u1-8tT" id="czG-NV-Jfa"/>
+                                                    </connections>
+                                                </collectionViewCell>
+                                            </cells>
+                                        </collectionView>
+                                    </subviews>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                </view>
+                                <constraints>
+                                    <constraint firstItem="oKz-BJ-s1W" firstAttribute="leading" secondItem="nIc-lh-1sB" secondAttribute="leading" type="default" id="58G-wY-Otk"/>
+                                    <constraint firstItem="oKz-BJ-s1W" firstAttribute="bottom" secondItem="nIc-lh-1sB" secondAttribute="bottom" type="default" id="AJ6-Gm-ft2"/>
+                                    <constraint firstItem="oKz-BJ-s1W" firstAttribute="trailing" secondItem="nIc-lh-1sB" secondAttribute="trailing" type="default" id="k4g-n6-2ah"/>
+                                    <constraint firstItem="oKz-BJ-s1W" firstAttribute="top" secondItem="nIc-lh-1sB" secondAttribute="top" type="default" id="obr-Vk-6G9"/>
+                                </constraints>
+                                <connections>
+                                    <outlet property="collectionView" destination="oKz-BJ-s1W" id="7Qo-ba-Tnn"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="4WI-WU-zGj" id="ghD-yb-7EV"/>
+                            <outlet property="delegate" destination="4WI-WU-zGj" id="axp-TP-ZWa"/>
+                        </connections>
+                    </tableView>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" barStyle="blackOpaque" prompted="NO"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="DC7-dL-ftc" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="171" y="88"/>
+        </scene>
+    </scenes>
+    <classes>
+        <class className="CollectionViewCell" superclassName="UICollectionViewCell">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/CollectionViewCell.h"/>
+            <relationships>
+                <relationship kind="outlet" name="imageView" candidateClass="UIImageView"/>
+                <relationship kind="outlet" name="label" candidateClass="UILabel"/>
+            </relationships>
+        </class>
+        <class className="NSLayoutConstraint" superclassName="NSObject">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/NSLayoutConstraint.h"/>
+        </class>
+        <class className="TableCell" superclassName="UITableViewCell">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/TableCell.h"/>
+            <relationships>
+                <relationship kind="outlet" name="collectionView" candidateClass="UICollectionView"/>
+            </relationships>
+        </class>
+        <class className="UICollectionReusableView" superclassName="UIView">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/UICollectionReusableView.h"/>
+        </class>
+        <class className="UICollectionViewCell" superclassName="UICollectionReusableView">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/UICollectionViewCell.h"/>
+        </class>
+        <class className="UICollectionViewFlowLayout" superclassName="UICollectionViewLayout">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/UICollectionViewFlowLayout.h"/>
+        </class>
+        <class className="ViewController" superclassName="UITableViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/ViewController.h"/>
+        </class>
+    </classes>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination"/>
+    </simulatedMetricsContainer>
+</document>
